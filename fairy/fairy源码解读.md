@@ -1,5 +1,6 @@
 ---
-typora-root-url: images
+typora-root-url: res
+typora-copy-images-to: res\images
 ---
 
 
@@ -28,7 +29,7 @@ Fairy编辑器的使用在官网【教程】中已有详细说明。
 
 用户在Fairy编辑器中创作的内容，可以独立记录在Unity项目之外。这个fairy项目存储的文件资源如下：
 
-![编辑器内容根目录](/images/1.png)
+![编辑器内容根目录](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/1.png)
 
 *.fairy文件为编辑器识别的文件，打开项目的入口。
 
@@ -38,9 +39,9 @@ settings文件夹内为此项目的偏好设置，这些设置让编辑器的使
 
 项目内容被放置在assets文件夹中，其内部文件夹对应到fairy项目内部的包。
 
-| ![fairy项目的文件资源系统中assets文件夹的内部目录](/2.png) | ![fairy项目的文件资源系统中assets/home文件夹的内部目录](/3.png) | ![fairy项目的文件资源系统中assets/home/res文件夹的内部目录](/6.png) | ![fairy项目的编辑器内资源库视图](/5.png) |
-| :--------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------------------------------------: |
-|      fairy项目的文件资源系统中assets文件夹的内部目录       |     fairy项目的文件资源系统中assets/home文件夹的内部目录     |   fairy项目的文件资源系统中assets/home/res文件夹的内部目录   |      fairy项目的编辑器内资源库视图       |
+| ![fairy项目的文件资源系统中assets文件夹的内部目录](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/2.png) | ![fairy项目的文件资源系统中assets/home文件夹的内部目录](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/3.png) | ![fairy项目的文件资源系统中assets/home/res文件夹的内部目录](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/6.png) | ![fairy项目的编辑器内资源库视图](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/5.png) |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|       fairy项目的文件资源系统中assets文件夹的内部目录        |     fairy项目的文件资源系统中assets/home文件夹的内部目录     |   fairy项目的文件资源系统中assets/home/res文件夹的内部目录   |                fairy项目的编辑器内资源库视图                 |
 
 ### fairy项目所记录的内容
 
@@ -101,7 +102,7 @@ package.xml文件标识着这个文件夹不是一个普通文件夹，而是fai
 
 fairy项目导出的内容是unity项目可用的资源。
 
-![fairy项目的导出内容](/image-20191030195617408.png)
+![fairy项目的导出内容](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191030195617408.png)
 
 fairy项目中的每个包，会被导出为1个*.bytes文件，和多个图集文件。
 
@@ -113,7 +114,7 @@ fairy项目中的每个包，会被导出为1个*.bytes文件，和多个图集�
 
 fairy为多种游戏引擎提供了sdk。在Unity中使用FairyGUI，需要置入的内容：
 
-![Fairy为Unity提供的SDK](/8.png)
+![Fairy为Unity提供的SDK](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/8.png)
 
 ## 文件夹概览
 
@@ -135,23 +136,23 @@ fairy为多种游戏引擎提供了sdk。在Unity中使用FairyGUI，需要置�
 
 #### 可交互型组件
 
-![类图-事件](/9.png)
+![类图-事件](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/9.png)
 
 #### 控制器的属性控制
 
-![类图-Gear](/10.png)
+![类图-Gear](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/10.png)
 
 #### 控制器的动作
 
-![类图4](/12.png)
+![类图4](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/12.png)
 
 #### 字体
 
-![类图3](/11.png)
+![类图3](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/11.png)
 
 #### 碰撞检测
 
-![类图5](/13.png)
+![类图5](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/13.png)
 
 
 
@@ -272,7 +273,7 @@ fairy为多种游戏引擎提供了sdk。在Unity中使用FairyGUI，需要置�
 
 由此，创建了fairy自己的UI相机：Stage Camera。
 
-![创建第一个fairy物件](/image-20191028144001261.png)
+![创建第一个fairy物件](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028144001261.png)
 
 ### Stage
 
@@ -343,7 +344,7 @@ StageEngine组件可以展示，所有FairyGUI物件的活动状态信息，即F
 
 StageEngine继承自UnityEngine.MonoBehaviour，因而可执行unity开放的多种接口。
 
-![StageEngine](/image-20191107163309097.png)
+![StageEngine](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191107163309097.png)
 
 所有的更新方法，都放在unity提供的LateUpdate中执行。
 
@@ -470,7 +471,7 @@ StageEngine继承自UnityEngine.MonoBehaviour，因而可执行unity开放的多
 
 一般都需要将这个组件，手动挂到unity场景中，或者在业务层代码中自行添加，来设置适配模式。
 
-![UIContentScaler](/image-20191028145239101.png)
+![UIContentScaler](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028145239101.png)
 
 相关编辑器扩展的源码，在FairyGUIEditor.UIContentScalerEditor。
 
@@ -955,7 +956,7 @@ fairy的导出文件，包含一个名为`包名_fui.bytes`的二进制文件（
 
 FairyGUI.Utils.ByteBuffer用于解析fairy包的主数据二进制文件。
 
-![PackageItem](/image-20191104100340406.png)
+![PackageItem](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191104100340406.png)
 
 公开的position属性和私有的_pointer字段一致，为记录当前解析位置的int值。
 
@@ -989,16 +990,16 @@ ByteBuffer.littleEndian字段记录了_data数据是否来自zip文件。
 
 一个PackageItem对象就是一个包内项目。
 
-![PackageItem](/image-20191104100255757.png)
+![PackageItem](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191104100255757.png)
 
 #### type和objectType
 
 PackageItem的type字段和objectType字段的比较。
 
-|                       type                        |                       objectType                        |
-| :-----------------------------------------------: | :-----------------------------------------------------: |
-| ![PackageItem.type](/image-20191101190720899.png) | ![PackageItem.objectType](/image-20191101190746365.png) |
-| ![PackageItemType](/image-20191101190955691.png)  |       ![ObjectType](/image-20191101191058631.png)       |
+|                             type                             |                          objectType                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ![PackageItem.type](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191101190720899.png) | ![PackageItem.objectType](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191101190746365.png) |
+| ![PackageItemType](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191101190955691.png) | ![ObjectType](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191101191058631.png) |
 
 这两个字段都是在UIPackage类的对象的LoadPackage()方法执行时被赋值。
 
@@ -1216,13 +1217,13 @@ FairyGUI.DisplayObject通过其CreateGameObject等方法来创建UnityEngine.Gam
 
 之后，对于FairyGUI.DisplayObject，可以通过其gameObject属性来访问到UnityEngine.GameObject。
 
-![DisplayObject.gameObject](/image-20191025195401682.png)
+![DisplayObject.gameObject](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025195401682.png)
 
 #### FairyGUI.GObject创建UnityEngine.GameObject
 
 FairyGUI.GObject中有个CreateDisplayObject虚方法，由它的子类去复写这个虚方法，根据子类不同的需求去创建FairyGUI.DisplayObject，从而创建UnityEngine.GameObject。
 
-![override GObject.CreateDisplayObject](/image-20191026113449931.png)
+![override GObject.CreateDisplayObject](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191026113449931.png)
 
 以FairyGUI.GComponent为例，它创建了一个FairyGUI.Container（继承自FairyGUI.DisplayObject）。
 
@@ -1240,7 +1241,7 @@ FairyGUI.GObject中有个CreateDisplayObject虚方法，由它的子类去复写
 
 之后，对于FairyGUI.GObject，可以通过其displayObject属性来访问FairyGUI.DisplayObject，从而访问到UnityEngine.GameObject。
 
-![GObject.displayObject](/image-20191025200048283.png)
+![GObject.displayObject](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025200048283.png)
 
 
 
@@ -1257,7 +1258,7 @@ fairy在其Editor目录下，**DisplayObjectEditor**为DisplayObjectInfo组件�
 
 在Unity3D编辑器运行时，可以在Inspector视窗中查看此UnityEngine.GameObject所对应的FairyGUI.DisplayObject相关信息。
 
-![DisplayObjectEditor](/image-20191026144518747.png)
+![DisplayObjectEditor](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191026144518747.png)
 
 ### fairy创建物件汇总
 
@@ -1664,25 +1665,25 @@ fairy系的坐标系统，原点为左上角，2D坐标系统；
 
 1. 获取到FairyGUI.DisplayObject所记录的坐标(a,b)，它是此DisplayObject相对于其父节点的坐标。
 
-   ![FairyGUI.DisplayObject所记录的坐标](/image-20191027115857206.png)
+   ![FairyGUI.DisplayObject所记录的坐标](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191027115857206.png)
 
 2. 调整坐标值，得到其unity系本地坐标(a,-b,0)，便于后续利用UnityEngine提供的方法去操纵坐标。
 
-   ![unity系本地坐标](/image-20191027120130070.png)
+   ![unity系本地坐标](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191027120130070.png)
 
 3. 根据此DisplayObject的cachedTransform属性（UnityEngine.Transform类型）， 使用UnityEngine.Transform.TransformPoint()方法，计算出其unity系世界坐标(d,e,f)。
 
-   ![unity系世界坐标](/image-20191027123807892.png)
+   ![unity系世界坐标](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191027123807892.png)
 
 4. 此DisplayObject的worldSpaceContainer属性，记录了此DisplayObject的根节点容器Container，使用Container.GetRenderCamera()方法，获取到它的渲染相机，一个UnityEngine.Camera。
 
 5. 根据此UnityEngine.Camera，使用Camera.WorldToScreenPoint()方法，将之前得到的unity系世界坐标(d,e,f)，转化为此相机内的屏幕坐标(g,h,0)。
 
-   ![unity系屏幕坐标](/image-20191027142405611.png)
+   ![unity系屏幕坐标](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191027142405611.png)
 
 6. 此屏幕坐标为unity系坐标，若要将其应用于fairy系坐标的计算，还需将其转化为fairy系坐标。[FairyGUI.Stage]Stage.inst这个全局静态变量，记录了屏幕信息。
 
-   ![fairy系屏幕坐标](/image-20191027123716165.png)
+   ![fairy系屏幕坐标](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191027123716165.png)
 
 7. 最终得到的这个fairy系屏幕坐标，将可以与从FairyGUI.InputEvent中取得的坐标，做计算。
 
@@ -1733,11 +1734,11 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 创建事件接收器时，需要一个事件分发器和一个事件名作为构造参数。
 
-![EventListener构造函数](/14.png)
+![EventListener构造函数](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/14.png)
 
 这使得每个事件接收器都对应一个事件分发器，一个事件桥。
 
-![EventListener._bridge](/image-20191025111338305.png)
+![EventListener._bridge](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025111338305.png)
 
 而一个事件分发器，如GObject，往往，根据需求，会有多个事件接收器作为属性字段，如GObject.onClick，GObject.onRightClick，之类。
 
@@ -1745,21 +1746,21 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 创建事件桥时，需要一个事件分发器作为构造参数。
 
-![EventBridge构造函数](/image-20191024204728335.png)
+![EventBridge构造函数](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191024204728335.png)
 
 这使得每个事件桥都对应一个事件分发器。
 
-![EventBridge.owner](/image-20191025111736660.png)
+![EventBridge.owner](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025111736660.png)
 
 而一个事件分发器，应允许它使用多个事件桥，因此事件分发器中用一个词典记录了事件名-事件桥。
 
-![EventDispatcher._dic](/image-20191024204050292.png)
+![EventDispatcher._dic](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191024204050292.png)
 
 #### 通过事件接收器注册事件
 
 在业务层，比如给按钮注册点击事件，fairy使用的是**EventListener.Add**之类的方法。
 
-![EventListener.Add](/image-20191025111917222.png)
+![EventListener.Add](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025111917222.png)
 
 ```c#
 		public void Add(EventCallback1 callback)
@@ -1770,7 +1771,7 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 事件接收器将这个回调函数（代理）作为参数，传递给了自身宿主的事件桥。
 
-![EventBridge.Add](/image-20191025114142835.png)
+![EventBridge.Add](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025114142835.png)
 
 ```c#
 		public void Add(EventCallback1 callback)
@@ -1782,13 +1783,13 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 事件桥再将这个回调函数存储在自己的字段中，以备使用。
 
-![EventBridge._callback1](/image-20191025114424356.png)
+![EventBridge._callback1](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025114424356.png)
 
 #### 通过事件分发器注册事件
 
 在业务层，有时需要使用事件机制来传递参数，我们一般使用的是**EventDispatcher.AddEventListener**之类的方法。
 
-![EventDispatcher.AddEventListener](/image-20191025130445516.png)
+![EventDispatcher.AddEventListener](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025130445516.png)
 
 ```c#
 		public void AddEventListener(string strType, EventCallback1 callback)
@@ -1815,11 +1816,11 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 在业务层，我们抛出自定义事件，一般是使用**EventDispatcher.DispatchEvent**方法。
 
-![EventDispatcher.DispatchEvent](/image-20191025125503784.png)
+![EventDispatcher.DispatchEvent](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025125503784.png)
 
 而事件分发器，会在自身记录的事件桥词典中，索引出这个事件桥，让事件桥去做相关逻辑操作。
 
-![EventBridge.CallInternal](/image-20191025142435303.png)
+![EventBridge.CallInternal](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025142435303.png)
 
 ```c#
 		public void CallInternal(EventContext context)
@@ -1846,7 +1847,7 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 而用户的输入操作，fairy使用**EventDispatcher.BubbleEvent**抛出事件。
 
-![EventDispatcher.BubbleEvent](/image-20191025150106569.png)
+![EventDispatcher.BubbleEvent](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025150106569.png)
 
 ```c#
 		internal bool BubbleEvent(string strType, object data, List<EventBridge> addChain)
@@ -1918,7 +1919,7 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 其中，调用了EventDispatcher.GetChainBridges这个方法，用来获取这个事件分发器及其所有父节点事件分发器的事件桥。
 
-![EventDispatcher.GetChainBridges](/image-20191025152609736.png)
+![EventDispatcher.GetChainBridges](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025152609736.png)
 
 ```c#
 		internal void GetChainBridges(string strType, List<EventBridge> chain, bool bubble)
@@ -1979,13 +1980,13 @@ global指全局坐标，fairy系的屏幕坐标，如FairyGUI.InputEvent所记�
 
 fairy源码提供2种类型的事件回调代理：EventCallback0和EventCallback1。
 
-![EventCallback0](/image-20191025143314318.png)
+![EventCallback0](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025143314318.png)
 
-![EventCallback1](/image-20191025143346163.png)
+![EventCallback1](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025143346163.png)
 
 EventCallback0不带参数，而EventCallback1带EventContext类型参数。
 
-![EventContext](/image-20191025163607801.png)
+![EventContext](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025163607801.png)
 
 EventDispatcher EventContext.sender	此事件内容的事件分发器
 
@@ -2007,7 +2008,7 @@ EventContext EventContext.Get()	取出事件内容池中第一个元素
 
 ### 事件流概览
 
-![事件流概览](/image-20191025174106818.png)
+![事件流概览](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191025174106818.png)
 
 
 
@@ -2020,7 +2021,7 @@ EventContext EventContext.Get()	取出事件内容池中第一个元素
 
 GTween类是一个工具类，它提供了与缓动相关的一切静态方法、记录了静态字段，供全局调用。
 
-![GTween](/image-20191029114220864.png)
+![GTween](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029114220864.png)
 
 #### 创建缓动的方法
 
@@ -2053,17 +2054,17 @@ GTween类是一个工具类，它提供了与缓动相关的一切静态方法�
 
 TweenManager用来管理fairy中的所有缓动。
 
-![TweenManager](/image-20191028191338625.png)
+![TweenManager](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028191338625.png)
 
 #### 主要属性字段
 
 TweenManager._activeTweens 记录了正在活跃的缓动
 
-![TweenManager._activeTweens](/image-20191029093245950.png)
+![TweenManager._activeTweens](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029093245950.png)
 
 TweenManager._tweenerPool 为缓动的回收池
 
-![TweenManager._tweenerPool](/image-20191029093301743.png)
+![TweenManager._tweenerPool](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029093301743.png)
 
 #### 每帧执行
 
@@ -2218,27 +2219,27 @@ FairyGUI.TweenManager.TweenEngine类继承自UnityEngine.MonoBehaviour，因而�
 
 [GPath] _path	目前没有使用
 
-![GTweener](/image-20191028194819824.png)
+![GTweener](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028194819824.png)
 
 #### TweenValue
 
 TweenValue用于缓动的帧的数据。
 
-![TweenValue](/image-20191028195032375.png)
+![TweenValue](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028195032375.png)
 
 #### ITweenListener
 
 ITweenListener是缓动侦听接口。
 
-![ITweenListener](/image-20191028183227430.png)
+![ITweenListener](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028183227430.png)
 
 一些有缓动需求的类实现了此接口。
 
-![实现ITweenListener接口的类](/image-20191029172135379.png)
+![实现ITweenListener接口的类](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029172135379.png)
 
 在GTweener中记录了一个ITweenListener类型的_listener字段。
 
-![GTweener._listener](/image-20191029180738619.png)
+![GTweener._listener](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029180738619.png)
 
 在GTweener中合适的时机去调用执行它的各种方法。
 
@@ -2260,7 +2261,7 @@ EaseManager提供了多种缓动类型的计算。
 
 缓动类型效果示例：[ Ease Visualizer ](https://greensock.com/ease-visualizer)
 
-缓动类型图解：![缓动类型图解](/image-20191029163457501.png)
+缓动类型图解：![缓动类型图解](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029163457501.png)
 
 ### fairy自带的缓动功能汇总
 
@@ -2274,13 +2275,13 @@ fairy在编辑器中提供了一些便捷操作，让UE可以直接控制缓动�
 
 给组件创建动效Transition，能创建多个缓动，并灵活地控制它们。
 
-![给组件创建动效](/image-20191029145743318.png)
+![给组件创建动效](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029145743318.png)
 
 #### 对元件的属性控制启用缓动
 
 给一个组件创建了控制器之后，可以对其元件设置属性控制。
 
-![元件的属性控制](/image-20191029150023870.png)
+![元件的属性控制](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029150023870.png)
 
 勾选缓动之后，在创建此GearBase时，创建了一个GearTweenConfig对象，赋值给了此GearBase的_tweenConfig属性。
 
@@ -2378,21 +2379,21 @@ UE所使用的组件，可交互型组件，一般都继承自GObject。
 
 一个控制器即为一个Controller类的实例。
 
-![Controller](/image-20191028180324311.png)
+![Controller](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028180324311.png)
 
 ### 属性控制
 
 在fairy元件的属性控制栏，可以设置其在此控制器下的显示控制。
 
-![控制器的显示控制](/image-20191028155801183.png)
+![控制器的显示控制](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028155801183.png)
 
 除此之外，fairy还提供了多种属性控制类型。
 
-![控制器的属性控制](/image-20191028155921772.png)
+![控制器的属性控制](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028155921772.png)
 
 每种属性控制，都是一种GearBase类型的子类。
 
-![GearBase](/image-20191029211054678.png)
+![GearBase](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029211054678.png)
 
 在上文控制器的缓动类图中，能找到其对应的类。
 
@@ -2400,7 +2401,7 @@ UE所使用的组件，可交互型组件，一般都继承自GObject。
 
 在修改控制器面板中，可添加的动作**ControllerAction**，动作类型均来自其子类。
 
-![修改控制器](/image-20191029210754358.png)
+![修改控制器](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029210754358.png)
 
 播放动效，相关代码在**PlayTransitionAction**。
 
@@ -2414,25 +2415,25 @@ UE所使用的组件，可交互型组件，一般都继承自GObject。
 
 一个动效，就是一个Transition类的实例。
 
-![给组件创建动效](/image-20191029145743318.png)
+![给组件创建动效](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029145743318.png)
 
 Transition类如下：
 
-![Transition](/image-20191028180527450.png)
+![Transition](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191028180527450.png)
 
 ### TransitionItem
 
 在fairy编辑器的动效编辑窗口中，每个图层都对应一个TransitionItem类的实例，记录在Transition._items字段中。
 
-![TransitionItem](/image-20191029203750733.png)
+![TransitionItem](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029203750733.png)
 
 TransitionItem的tweenConfig字段为TweenConfig类型，记录了其缓动数据。
 
-![TweenConfig](/image-20191029204017263.png)
+![TweenConfig](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029204017263.png)
 
 TransitionItem的value字段为object类型，在构造时，会根据其[TransitionActionType]type字段，为其创建不同类型的数据。
 
-![TValue](/image-20191029204605102.png)
+![TValue](https://raw.githubusercontent.com/CoderIsabella/reading/master/fairy/images/image-20191029204605102.png)
 
 
 
