@@ -1,6 +1,6 @@
 ---
-typora-root-url: res
-typora-copy-images-to: res\images
+
+
 ---
 
 
