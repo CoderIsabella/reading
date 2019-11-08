@@ -1,6 +1,6 @@
 ---
-typora-root-url: res
-typora-copy-images-to: res\images
+typora-root-url: fairy
+typora-copy-images-to: fairy\images
 ---
 
 
